@@ -24,12 +24,10 @@ header('Content-Type:text/html; charset=utf-8');
 				<span class="mdl-textfield__error">* - Формат неверный. Повторите попытку</span>
 			  </div>
 			<div class="mdl-textfield mdl-js-textfield">
-				<input class="mdl-textfield__input" type="text" name="date" id="date" pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d">
-				<label class="mdl-textfield__label" for="date">Дата рождения*</label> 
-				<span class="mdl-textfield__error">* Формат даты ДД.ММ.ГГГГ</span>
+				<input class="mdl-textfield__input" type="date" name="date" id="date">
 			 </div>
 			 <div class="mdl-textfield mdl-js-textfield">
-				<input class="mdl-textfield__input" type="text" name="policy" id="policy" pattern="[0-9]*" >
+				<input class="mdl-textfield__input" type="text" name="policy" id="policy" pattern="[0-9]*" maxlength="16" >
 				<label class="mdl-textfield__label" for="policy">Либо номер полиса*</label>
 				<span class="mdl-textfield__error">* - Формат неверный. Повторите попытку</span>
 			 </div>
